@@ -1,40 +1,40 @@
-import React from "react";
+/* eslint-disable react/no-unescaped-entities */
+import React from 'react';
+import photo from '../images/justin.jpg';
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import catAndHumanIllustration from "../images/cat-and-human-illustration.svg";
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import SocialLinks from '../components/SocialLinks';
+import PageLinks from '../components/PageLinks';
+
+import { data } from '../data/data';
 
 function IndexPage() {
   return (
     <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Home"
+        title='Home'
       />
-
-      <section className="text-center">
-        <img
-          alt="Cat and human sitting on a couch"
-          className="block w-1/2 mx-auto mb-8"
-          src={catAndHumanIllustration}
-        />
-
-        <h2 className="inline-block p-3 mb-4 text-2xl font-bold bg-yellow-400">
-          Hey there! Welcome to your first Gatsby site.
-        </h2>
-
-        <p className="leading-loose">
-          This is a barebones starter for Gatsby styled using{` `}
-          <a
-            className="font-bold text-gray-900 no-underline"
-            href="https://tailwindcss.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tailwind CSS
-          </a>
-          , a utility-first CSS framework.
-        </p>
+      <section>
+        <div id='picture' className='flex justify-center mb-4'>
+          <img src={photo} alt='portrait' className='w-3/6 rounded-full mb-0' />
+        </div>
+        <div
+          id='bio'
+          className='flex flex-col justify-center content-center m-0'
+        >
+          <h1 className='text-2xl mb-3 font-bold text-center'>
+            Hello, I'm {data.name}{' '}
+          </h1>
+          <p className='w-3/4 mx-auto text-center'>{data.description}</p>
+        </div>
+        <div>
+          <PageLinks />
+          <div id='links' className='mt-8'>
+            <SocialLinks />
+          </div>
+        </div>
       </section>
     </Layout>
   );
