@@ -13,7 +13,7 @@ function Layout({ children }) {
         <main
           className={`${background} flex flex-col h-screen items-center flex-wrap`}
         >
-          <div className='w-screen'>
+          <div className='w-screen mt-3'>
             <Toggle />
           </div>
           {children}
