@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PageLinks from '../components/PageLinks';
+import CardList from '../components/CardList';
 
 function ProjectsPage() {
   return (
@@ -11,8 +12,9 @@ function ProjectsPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title='Projects'
       />
-      <section>
-        <h1>Projects Page</h1>
+      <section className='flex flex-col'>
+        <h1 className='text-5xl text-center mb-10'>Projects Page</h1>
+        <CardList />
       </section>
 
       <div>
