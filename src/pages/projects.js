@@ -12,7 +12,7 @@ function ProjectsPage() {
         title='Projects'
       />
       <section>
-        <h1>Prjects Page</h1>
+        <h1>Projects Page</h1>
       </section>
 
       <div>
