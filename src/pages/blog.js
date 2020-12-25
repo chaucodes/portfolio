@@ -2,6 +2,7 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import PageLinks from '../components/PageLinks';
 
 function BlogPage() {
   return (
@@ -14,6 +15,10 @@ function BlogPage() {
       <section>
         <h1>Blog Page</h1>
       </section>
+
+      <div>
+        <PageLinks />
+      </div>
     </Layout>
   );
 }

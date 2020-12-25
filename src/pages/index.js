@@ -2,10 +2,10 @@
 import React from 'react';
 import photo from '../images/justin.jpg';
 
+import Header from '../components/header';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import SocialLinks from '../components/SocialLinks';
-import PageLinks from '../components/PageLinks';
 
 import { data } from '../data/data';
 
@@ -18,7 +18,11 @@ function IndexPage() {
       />
       <section>
         <div id='picture' className='flex justify-center mb-4'>
-          <img src={photo} alt='portrait' className='w-3/6 rounded-full mb-0' />
+          <img
+            src={photo}
+            alt='portrait'
+            className='w-3/6 h-3/6 rounded-full mb-0'
+          />
         </div>
         <div
           id='bio'
@@ -30,7 +34,7 @@ function IndexPage() {
           <p className='w-3/4 mx-auto text-center'>{data.description}</p>
         </div>
         <div>
-          <PageLinks />
+          <Header />
           <div id='links' className='mt-8'>
             <SocialLinks />
           </div>

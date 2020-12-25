@@ -2,6 +2,7 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import PageLinks from '../components/PageLinks';
 
 function ProjectsPage() {
   return (
@@ -13,6 +14,10 @@ function ProjectsPage() {
       <section>
         <h1>Prjects Page</h1>
       </section>
+
+      <div>
+        <PageLinks />
+      </div>
     </Layout>
   );
 }
