@@ -10,10 +10,12 @@ function Layout({ children }) {
   return (
     <ThemeProvider>
       <div>
-        <Toggle />
         <main
-          className={`${background} flex flex-col h-screen justify-center items-center flex-wrap`}
+          className={`${background} flex flex-col h-screen items-center flex-wrap`}
         >
+          <div className='w-screen'>
+            <Toggle />
+          </div>
           {children}
         </main>
       </div>

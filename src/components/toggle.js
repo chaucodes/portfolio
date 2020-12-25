@@ -9,14 +9,17 @@ const Toggle = () => {
   };
 
   return (
-    <label>
-      <input
-        type='checkbox'
-        checked={isDark()}
-        onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
-      ></input>
-      {theme} Mode
-    </label>
+    <div>
+      <label className='ml-10'>
+        <input
+          className='text-end'
+          type='checkbox'
+          checked={isDark()}
+          onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
+        ></input>
+        {theme} mode
+      </label>
+    </div>
   );
 };
 
