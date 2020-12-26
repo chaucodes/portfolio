@@ -2,6 +2,10 @@
   @apply light;
 }
 
+html {
+  background-color: var(--color-bg-primary);
+}
+
 .toggle__dot {
   top: -0.25rem;
   left: -0.25rem;

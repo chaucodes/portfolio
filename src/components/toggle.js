@@ -11,7 +11,7 @@ const Toggle = () => {
   return (
     <div>
       <div>
-        <div className='flex items-center justify-end w-full mb-24 mr-5'>
+        <div className='flex items-center justify-end mb-24 mr-5'>
           <label
             htmlFor='toogleA'
             className='flex items-center cursor-pointer select-none'

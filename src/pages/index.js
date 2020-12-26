@@ -21,7 +21,7 @@ function IndexPage() {
           <img
             src={photo}
             alt='portrait'
-            className='w-3/6 h-3/6 rounded-full mb-0'
+            className='w-3/6 md:6/12 h-3/6 rounded-full mb-0'
           />
         </div>
         <div

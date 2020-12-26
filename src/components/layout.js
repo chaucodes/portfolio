@@ -9,15 +9,11 @@ function Layout({ children }) {
 
   return (
     <ThemeProvider>
-      <div>
-        <main
-          className={`${background} flex flex-col h-screen items-center flex-wrap`}
-        >
-          <div className='w-screen mt-3'>
-            <Toggle />
-          </div>
-          {children}
-        </main>
+      <div className={`${background} flex flex-col h-screen`}>
+        <div className='mt-5'>
+          <Toggle />
+        </div>
+        <main className='flex flex-col items-center'>{children}</main>
       </div>
     </ThemeProvider>
   );

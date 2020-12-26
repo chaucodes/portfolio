@@ -5,9 +5,9 @@ import photo from '../images/dog-illustration.svg';
 const CardItem = () => {
   return (
     <div className='flex justify-center'>
-      <div className='border-solid border-2 border-current rounded-xl rounded-t-none w-2/4'>
-        <div className='flex justify-center mb-5'>
-          <img src={photo} alt='' className='w-2/4' />
+      <div className='border-solid border-2 border-current rounded-xl rounded-t-none w-9/12 md:w-2/4'>
+        <div className='flex justify-center my-10'>
+          <img src={photo} alt='' className='h-4/5 md:h-3/4 w-3/12 md:w-2/4' />
         </div>
         <hr className='border-current' />
         <div className='p-6'>

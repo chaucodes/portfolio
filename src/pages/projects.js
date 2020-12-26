@@ -12,7 +12,7 @@ function ProjectsPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title='Projects'
       />
-      <section className='w-screen'>
+      <section className='justify-center'>
         <h1 className='text-4xl text-center mb-10'>Projects Page</h1>
         <CardList />
       </section>
