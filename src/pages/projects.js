@@ -12,8 +12,8 @@ function ProjectsPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title='Projects'
       />
-      <section className='flex flex-col'>
-        <h1 className='text-5xl text-center mb-10'>Projects Page</h1>
+      <section className='w-screen'>
+        <h1 className='text-4xl text-center mb-10'>Projects Page</h1>
         <CardList />
       </section>
 
