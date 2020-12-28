@@ -1,9 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import photo from '../images/dog-illustration.svg';
 
-const CardItem = () => {
+const CardItem = ({ title, description, url, source }) => {
   return (
+    // to-do: Add Box Shadow to the cards
     <div className='flex justify-center'>
       <div className='border-solid border-2 border-current rounded-xl rounded-t-none w-9/12 md:w-2/4'>
         <div className='flex justify-center my-10'>
@@ -11,23 +13,25 @@ const CardItem = () => {
         </div>
         <hr className='border-current' />
         <div className='p-6'>
-          <h1 className='text-2xl font-bold mb-2'>Card Item</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-            magnam neque eaque voluptatibus, quasi iure maiores iste fuga
-            placeat nostrum consectetur officia, dignissimos in. Ab vero ea
-            dicta quasi enim.
-          </p>
+          <h1 className='text-2xl font-bold mb-2'>{title}</h1>
+          <p>{description}</p>
           <div className='text-center my-4 mr-3 inline-block px-4 py-1 rounded-2xl border-solid border-2 border-purple-500'>
-            <a href='/'>Source Code</a>
+            <a href={source}>Source Code</a>
           </div>
           <div className='text-center my-4 inline-block px-4 py-1 rounded-2xl border-solid border-2 border-purple-500'>
-            <a href='/'>Live Site</a>
+            <a href={url}>Live Site</a>
           </div>
         </div>
       </div>
     </div>
   );
+};
+
+CardItem.propTypes = {
+  title: PropTypes.node.isRequired,
+  description: PropTypes.node.isRequired,
+  source: PropTypes.node.isRequired,
+  url: PropTypes.node.isRequired,
 };
 
 export default CardItem;

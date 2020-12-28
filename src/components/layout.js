@@ -10,7 +10,7 @@ function Layout({ children }) {
   return (
     <ThemeProvider>
       <div className={`${background} flex flex-col h-screen`}>
-        <div className='mt-5'>
+        <div className='mt-5 mb-10'>
           <Toggle />
         </div>
         <main className='flex flex-col items-center'>{children}</main>
