@@ -1,9 +1,10 @@
 backend:
   name: github
   repo: chaucodes/portfolio
+  branch: main
 
-media_folder: static/assets
-public_folder: /assets
+media_folder: static/content/blog
+public_folder: /public
 
 collections:
   - name: blog
@@ -11,7 +12,7 @@ collections:
     folder: blog
     create: true
     fields:
-      - { name: path, label: Path }
+      - { name: slug, label: Slug }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
