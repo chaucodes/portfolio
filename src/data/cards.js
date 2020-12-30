@@ -7,6 +7,7 @@ const cards = [
         dicta quasi enim.`,
     url: 'https://google.com',
     source: 'https://githhub.com',
+    alt: 'Crossfit Website',
   },
   {
     title: 'link',
@@ -16,6 +17,7 @@ const cards = [
         dicta quasi enim.`,
     url: 'https://google.com',
     source: 'https://githhub.com',
+    alt: 'Crossfit Website',
   },
   {
     title: 'barbell',
@@ -25,6 +27,7 @@ const cards = [
         dicta quasi enim.`,
     url: 'https://google.com',
     source: 'https://githhub.com',
+    alt: 'Crossfit Website',
   },
 ];
 

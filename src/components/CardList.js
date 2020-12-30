@@ -13,6 +13,7 @@ const CardList = () => {
             description={card.description}
             source={card.source}
             url={card.url}
+            alt={card.alt}
           />
         </>
       ))}
