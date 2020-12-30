@@ -20,7 +20,7 @@ const CardItem = ({ title, description, url, source, alt }) => {
           <h1 className='text-2xl font-bold mb-2'>{title}</h1>
           <p>{description}</p>
           <div className='text-center my-4 mr-3 inline-block px-4 py-1 rounded-2xl border-solid border-2 border-purple-500'>
-            <a href={source}>Source Code</a>
+            <a href={source}>Source </a>
           </div>
           <div className='text-center my-4 inline-block px-4 py-1 rounded-2xl border-solid border-2 border-purple-500'>
             <a href={url}>Live Site</a>
