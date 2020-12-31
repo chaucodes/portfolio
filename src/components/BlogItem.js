@@ -1,35 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
 
-export default function BlogItem({ data }) {
-  const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
-
+const BlogItem = ({ title, body, eventKey }) => {
   return (
-    <>
-      <div>
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-      </div>
-    </>
+    <div key={eventKey}>
+      <h1>{title}</h1>
+      <p>{body}</p>
+    </div>
   );
-}
-
-export const pageQuery = graphql`
-  query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        slug
-        title
-      }
-    }
-  }
-`;
+};
 
 BlogItem.propTypes = {
-  data: PropTypes.node.isRequired,
+  title: PropTypes.node.isRequired,
+  body: PropTypes.node.isRequired,
+  eventKey: PropTypes.node.isRequired,
 };
+
+export default BlogItem;

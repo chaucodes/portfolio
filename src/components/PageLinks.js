@@ -6,8 +6,8 @@ const PageLinks = () => {
     <div className='flex justify-center space-x-5 mt-5'>
       <LinkItem url={`/`} title='Home' />
       <LinkItem url={`/projects`} title='Projects' />
-      <LinkItem url={`/blog`} title='Blog' />
-      <LinkItem url='https://youtube.com/c/chaucodes' title='Uses' />
+      {/* <LinkItem url={`/blog`} title='Blog' /> */}
+      <LinkItem url={'/uses'} title='Uses' />
     </div>
   );
 };

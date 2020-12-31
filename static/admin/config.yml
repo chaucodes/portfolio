@@ -10,7 +10,7 @@ collections:
   - name: blog
     label: Blog
     folder: static/content/blog
-    slug: 'index'
+    slug: 'blog/index'
     create: true
     fields:
       - { name: slug, label: Slug }
