@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 
 export default function BlogItem({ data }) {
-  const { markdownRemark } = data; // data.markdownRemark holds your post data
+  const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
   return (

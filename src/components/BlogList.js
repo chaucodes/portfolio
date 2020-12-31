@@ -5,8 +5,6 @@ const BlogList = () => {
   return (
     <div>
       <BlogItem />
-      <BlogItem />
-      <BlogItem />
     </div>
   );
 };

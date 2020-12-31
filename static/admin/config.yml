@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: chaucodes/portfolio
   branch: main
 
 media_folder: static/content/blog
@@ -10,7 +11,6 @@ collections:
     label: Blog
     folder: blog
     slug: 'index'
-    path: '{{title}}/index'
     create: true
     fields:
       - { name: slug, label: Slug }
