@@ -2,7 +2,6 @@
 import React from 'react';
 import photo from '../images/justin.jpg';
 
-import Header from '../components/header';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import SocialLinks from '../components/SocialLinks';
@@ -34,7 +33,6 @@ function IndexPage() {
           <p className='w-3/4 mx-auto text-center'>{data.description}</p>
         </div>
         <div>
-          <Header />
           <div id='links' className='mt-8'>
             <SocialLinks />
           </div>

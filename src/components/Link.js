@@ -6,12 +6,13 @@ const LinkItem = ({ title, url }) => {
   return (
     <>
       <Link
-        className='text-white transition duration-400 transform hover:-translate-y-1 hover:scale-100 ease-in border-solid border-2 border-purple-500 p-2 rounded-xl bg-purple-500'
+        className='font-medium uppercase transition-all duration-700 ease-in-out hover:underline text-white text-2xl mb-2 mt-3'
         to={url}
         target='_blank'
       >
         {title}
       </Link>
+      <br />
     </>
   );
 };

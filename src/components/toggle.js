@@ -10,7 +10,7 @@ const Toggle = () => {
 
   return (
     <div>
-      <div className='fixed right-0 md:right-10'>
+      <div className='fixed right-8 md:right-8'>
         <div className='flex items-center'>
           <label
             htmlFor='toogleA'

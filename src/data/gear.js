@@ -1,27 +1,35 @@
 const gear = [
   {
-    title: 'mouse',
-    link: 'https://amazon.com',
-  },
-  {
-    title: 'keyboard',
-    link: 'https://amazon.com',
-  },
-  {
     title: 'Monitor',
-    link: 'https://amazon.com',
+    link: 'https://amzn.to/2RsDKAv',
   },
   {
-    title: 'mousepad',
-    link: 'https://amazon.com',
+    title: 'Monitor Mount',
+    link: 'https://amzn.to/2ZyHsMZ',
   },
   {
-    title: 'table',
-    link: 'https://amazon.com',
+    title: 'Desk: Autonomous.ai Smartdesk 2',
+    link: 'http://bit.ly/2KQgso1',
   },
   {
-    title: 'chair',
-    link: 'https://amazon.com',
+    title: 'Laptop: 2019 16" Macbook Pro w/ i9, 64GB RAM, 1TB SSD',
+    link: 'https://amzn.to/2Rye3i6',
+  },
+  {
+    title: 'Mouse: Logitech MX Master 3',
+    link: 'https://amzn.to/2V7vMiB',
+  },
+  {
+    title: 'Trackpad: Apple Magic Trackpad',
+    link: 'https://amzn.to/2yZ2OsB',
+  },
+  {
+    title: 'Chair: Autonomous.ai Ergochair 2',
+    link: 'http://bit.ly/38NwmYo',
+  },
+  {
+    title: 'Foot Rest: Kensington Footrest',
+    link: 'https://amzn.to/2KHEku5',
   },
 ];
 
