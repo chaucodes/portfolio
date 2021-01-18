@@ -11,14 +11,15 @@ function UsesPage() {
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
         title='Uses'
       />
-      <section className='justify-center'>
-        <h1 className='text-5xl text-center mb-10'>Uses</h1>
-      </section>
+      <section className='mb-20'>
+        <section className='justify-center'>
+          <h1 className='text-5xl text-center mb-10'>Uses</h1>
+        </section>
 
-      <section className='w-screen flex justify-center mb-20'>
-        <UsesTable header='Desk Setup' />
+        <section className='w-screen flex justify-center mb-20'>
+          <UsesTable header='Desk Setup' />
+        </section>
       </section>
-
       {/* <section className='w-screen flex justify-center mb-20'>
         <UsesTable header={'My Stack'} />
       </section> */}

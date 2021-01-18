@@ -14,6 +14,7 @@ const CardList = () => {
             source={card.source}
             url={card.url}
             alt={card.alt}
+            photo={card.photo}
           />
         </>
       ))}
