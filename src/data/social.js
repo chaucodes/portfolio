@@ -3,5 +3,5 @@ export const social = {
   youtube: 'https://youtube.com/c/chaucodes',
   twitter: 'https://twitter.com/chau_codes',
   github: 'https://github.com/chaucodes',
-  linkedin: 'https://instagram.com/chau_codes',
+  linkedin: 'https://www.linkedin.com/in/chaucodes/',
 };
